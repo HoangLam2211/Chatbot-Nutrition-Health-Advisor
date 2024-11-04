@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.chatbox-messages {
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.chat-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-message p {
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    max-width: 80%;
+}
+
+.user-message p {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+}
+
+.avatar {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.user-message .avatar {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #999;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.chatbox-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+    .chat-container {
+        width: 95%;
+    }
+}
